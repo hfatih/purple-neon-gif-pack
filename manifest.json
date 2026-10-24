@@ -1,0 +1,1271 @@
+{
+  "schemaVersion": 1,
+  "packageType": "icon_pack",
+  "name": "Purple Neon Gif Pack",
+  "description": "evoX ve Stream Deck için 250 adet yüksek kaliteli hareketli mor neon ikon paketi.",
+  "version": "1.0.0",
+  "author": {
+    "id": "hfatih",
+    "name": "Fatih Han"
+  },
+  "requiredActions": [],
+  "requiredIntegrations": [],
+  "coverImage": "cover.png",
+  "createdWith": "evox-deck-v2",
+  "createdAt": "2026-10-24T03:05:47.000Z",
+  "assets": {
+    "icons": [
+      {
+        "id": "purple-neon-1-1-1",
+        "name": "1",
+        "path": "assets/icons/1_1_1.gif"
+      },
+      {
+        "id": "purple-neon-2-1-1",
+        "name": "2",
+        "path": "assets/icons/2_1_1.gif"
+      },
+      {
+        "id": "purple-neon-4-1-1",
+        "name": "4",
+        "path": "assets/icons/4_1_1.gif"
+      },
+      {
+        "id": "purple-neon-5-1-1",
+        "name": "5",
+        "path": "assets/icons/5_1_1.gif"
+      },
+      {
+        "id": "purple-neon-7-1-1",
+        "name": "7",
+        "path": "assets/icons/7_1_1.gif"
+      },
+      {
+        "id": "purple-neon-8-1-1",
+        "name": "8",
+        "path": "assets/icons/8_1_1.gif"
+      },
+      {
+        "id": "purple-neon-9-1-1",
+        "name": "9",
+        "path": "assets/icons/9_1_1.gif"
+      },
+      {
+        "id": "purple-neon-a-1-1",
+        "name": "A",
+        "path": "assets/icons/A_1_1.gif"
+      },
+      {
+        "id": "purple-neon-abone-1-1-1",
+        "name": "Abone",
+        "path": "assets/icons/Abone_1_1_1.gif"
+      },
+      {
+        "id": "purple-neon-abone-yıldızları-1-1",
+        "name": "Abone Yıldızları",
+        "path": "assets/icons/Abone_Yıldızları_1_1.gif"
+      },
+      {
+        "id": "purple-neon-alfabetik-sırala-1-1",
+        "name": "Alfabetik Sırala",
+        "path": "assets/icons/Alfabetik_Sırala_1_1.gif"
+      },
+      {
+        "id": "purple-neon-altı-1-1",
+        "name": "Altı",
+        "path": "assets/icons/Altı_1_1.gif"
+      },
+      {
+        "id": "purple-neon-alışveriş-sepeti-1-1",
+        "name": "Alışveriş Sepeti",
+        "path": "assets/icons/Alışveriş_Sepeti_1_1.gif"
+      },
+      {
+        "id": "purple-neon-ana-sayfa-1-1",
+        "name": "Ana Sayfa",
+        "path": "assets/icons/Ana_Sayfa_1_1.gif"
+      },
+      {
+        "id": "purple-neon-arayüz-düzenle-1-1",
+        "name": "Arayüz Düzenle",
+        "path": "assets/icons/Arayüz_Düzenle_1_1.gif"
+      },
+      {
+        "id": "purple-neon-artı-1-1",
+        "name": "Artı",
+        "path": "assets/icons/Artı_1_1.gif"
+      },
+      {
+        "id": "purple-neon-artı-daire-1-1",
+        "name": "Artı Daire",
+        "path": "assets/icons/Artı_Daire_1_1.gif"
+      },
+      {
+        "id": "purple-neon-asma-kilit-1-1",
+        "name": "Asma Kilit",
+        "path": "assets/icons/Asma_Kilit_1_1.gif"
+      },
+      {
+        "id": "purple-neon-ateş-1-1",
+        "name": "Ateş",
+        "path": "assets/icons/Ateş_1_1.gif"
+      },
+      {
+        "id": "purple-neon-ay-gece-1-1",
+        "name": "Ay Gece",
+        "path": "assets/icons/Ay_Gece_1_1.gif"
+      },
+      {
+        "id": "purple-neon-ayarlar-1-1",
+        "name": "Ayarlar",
+        "path": "assets/icons/Ayarlar_1_1.gif"
+      },
+      {
+        "id": "purple-neon-aşağı-açı-oku-1-1",
+        "name": "Aşağı Açı Oku",
+        "path": "assets/icons/Aşağı_Açı_Oku_1_1.gif"
+      },
+      {
+        "id": "purple-neon-aşağı-el-i̇şareti-1-1",
+        "name": "Aşağı El İşareti",
+        "path": "assets/icons/Aşağı_El_İşareti_1_1.gif"
+      },
+      {
+        "id": "purple-neon-aşağı-ok-1-1",
+        "name": "Aşağı Ok",
+        "path": "assets/icons/Aşağı_Ok_1_1.gif"
+      },
+      {
+        "id": "purple-neon-aşağı-ok-daire-1-1",
+        "name": "Aşağı Ok Daire",
+        "path": "assets/icons/Aşağı_Ok_Daire_1_1.gif"
+      },
+      {
+        "id": "purple-neon-aşağı-ok-düz-1-1",
+        "name": "Aşağı Ok Düz",
+        "path": "assets/icons/Aşağı_Ok_Düz_1_1.gif"
+      },
+      {
+        "id": "purple-neon-aşağı-sırala-1-1",
+        "name": "Aşağı Sırala",
+        "path": "assets/icons/Aşağı_Sırala_1_1.gif"
+      },
+      {
+        "id": "purple-neon-aşağı-yönlü-ok-1-1",
+        "name": "Aşağı Yönlü Ok",
+        "path": "assets/icons/Aşağı_Yönlü_Ok_1_1.gif"
+      },
+      {
+        "id": "purple-neon-aşağı-üçgen-1-1",
+        "name": "Aşağı Üçgen",
+        "path": "assets/icons/Aşağı_Üçgen_1_1.gif"
+      },
+      {
+        "id": "purple-neon-aşağı-şevron-daire-1-1",
+        "name": "Aşağı Şevron Daire",
+        "path": "assets/icons/Aşağı_Şevron_Daire_1_1.gif"
+      },
+      {
+        "id": "purple-neon-aşağı-şevron-oku-1-1",
+        "name": "Aşağı Şevron Oku",
+        "path": "assets/icons/Aşağı_Şevron_Oku_1_1.gif"
+      },
+      {
+        "id": "purple-neon-b-1-1",
+        "name": "B",
+        "path": "assets/icons/B_1_1.gif"
+      },
+      {
+        "id": "purple-neon-bayrak-1-1",
+        "name": "Bayrak",
+        "path": "assets/icons/Bayrak_1_1.gif"
+      },
+      {
+        "id": "purple-neon-belge-kopyala-1-1",
+        "name": "Belge Kopyala",
+        "path": "assets/icons/Belge_Kopyala_1_1.gif"
+      },
+      {
+        "id": "purple-neon-beğen-1-1",
+        "name": "Beğen",
+        "path": "assets/icons/Beğen_1_1.gif"
+      },
+      {
+        "id": "purple-neon-beğen-başparmak-1-1",
+        "name": "Beğen Başparmak",
+        "path": "assets/icons/Beğen_Başparmak_1_1.gif"
+      },
+      {
+        "id": "purple-neon-beğenme-başparmak-1-1",
+        "name": "Beğenme Başparmak",
+        "path": "assets/icons/Beğenme_Başparmak_1_1.gif"
+      },
+      {
+        "id": "purple-neon-bilgi-butonu-1-1",
+        "name": "Bilgi Butonu",
+        "path": "assets/icons/Bilgi_Butonu_1_1.gif"
+      },
+      {
+        "id": "purple-neon-bit-puanı-1-1",
+        "name": "Bit Puanı",
+        "path": "assets/icons/Bit_Puanı_1_1.gif"
+      },
+      {
+        "id": "purple-neon-boyutu-büyüt-1-1",
+        "name": "Boyutu Büyüt",
+        "path": "assets/icons/Boyutu_Büyüt_1_1.gif"
+      },
+      {
+        "id": "purple-neon-boş-dosya-1-1",
+        "name": "Boş Dosya",
+        "path": "assets/icons/Boş_Dosya_1_1.gif"
+      },
+      {
+        "id": "purple-neon-c-1-1",
+        "name": "C",
+        "path": "assets/icons/C_1_1.gif"
+      },
+      {
+        "id": "purple-neon-canlı-yayın-1-1",
+        "name": "Canlı Yayın",
+        "path": "assets/icons/Canlı_Yayın_1_1.gif"
+      },
+      {
+        "id": "purple-neon-cep-telefonu-1-1",
+        "name": "Cep Telefonu",
+        "path": "assets/icons/Cep_Telefonu_1_1.gif"
+      },
+      {
+        "id": "purple-neon-d-1-1",
+        "name": "D",
+        "path": "assets/icons/D_1_1.gif"
+      },
+      {
+        "id": "purple-neon-daire-dış-hat-1-1",
+        "name": "Daire Dış Hat",
+        "path": "assets/icons/Daire_Dış_Hat_1_1.gif"
+      },
+      {
+        "id": "purple-neon-depolamaya-i̇ndir-1-1",
+        "name": "Depolamaya İndir",
+        "path": "assets/icons/Depolamaya_İndir_1_1.gif"
+      },
+      {
+        "id": "purple-neon-destek-1-1",
+        "name": "Destek",
+        "path": "assets/icons/Destek_1_1.gif"
+      },
+      {
+        "id": "purple-neon-değişim-okları-1-1",
+        "name": "Değişim Okları",
+        "path": "assets/icons/Değişim_Okları_1_1.gif"
+      },
+      {
+        "id": "purple-neon-discord-1-1",
+        "name": "Discord",
+        "path": "assets/icons/Discord_1_1.gif"
+      },
+      {
+        "id": "purple-neon-dizüstü-bilgisayar-1-1",
+        "name": "Dizüstü Bilgisayar",
+        "path": "assets/icons/Dizüstü_Bilgisayar_1_1.gif"
+      },
+      {
+        "id": "purple-neon-dolar-1-1",
+        "name": "Dolar",
+        "path": "assets/icons/Dolar_1_1.gif"
+      },
+      {
+        "id": "purple-neon-dolu-daire-1-1",
+        "name": "Dolu Daire",
+        "path": "assets/icons/Dolu_Daire_1_1.gif"
+      },
+      {
+        "id": "purple-neon-dosya-1-1",
+        "name": "Dosya",
+        "path": "assets/icons/Dosya_1_1.gif"
+      },
+      {
+        "id": "purple-neon-dosya-kaydet-1-1",
+        "name": "Dosya Kaydet",
+        "path": "assets/icons/Dosya_Kaydet_1_1.gif"
+      },
+      {
+        "id": "purple-neon-doğru-i̇şareti-1-1",
+        "name": "Doğru İşareti",
+        "path": "assets/icons/Doğru_İşareti_1_1.gif"
+      },
+      {
+        "id": "purple-neon-duraklat-sembolü-1-1",
+        "name": "Duraklat Sembolü",
+        "path": "assets/icons/Duraklat_Sembolü_1_1.gif"
+      },
+      {
+        "id": "purple-neon-duyurucu-spiker-1-1",
+        "name": "Duyurucu Spiker",
+        "path": "assets/icons/Duyurucu_Spiker_1_1.gif"
+      },
+      {
+        "id": "purple-neon-dünya-küre-1-1",
+        "name": "Dünya Küre",
+        "path": "assets/icons/Dünya_Küre_1_1.gif"
+      },
+      {
+        "id": "purple-neon-e-1-1",
+        "name": "E",
+        "path": "assets/icons/E_1_1.gif"
+      },
+      {
+        "id": "purple-neon-ekran-görüntüsü-1-1",
+        "name": "Ekran Görüntüsü",
+        "path": "assets/icons/Ekran_Görüntüsü_1_1.gif"
+      },
+      {
+        "id": "purple-neon-eksi-butonu-1-1",
+        "name": "Eksi Butonu",
+        "path": "assets/icons/Eksi_Butonu_1_1.gif"
+      },
+      {
+        "id": "purple-neon-eksi-daire-1-1",
+        "name": "Eksi Daire",
+        "path": "assets/icons/Eksi_Daire_1_1.gif"
+      },
+      {
+        "id": "purple-neon-eksi-kare-1-1",
+        "name": "Eksi Kare",
+        "path": "assets/icons/Eksi_Kare_1_1.gif"
+      },
+      {
+        "id": "purple-neon-eksi-kare-2-1-1",
+        "name": "Eksi Kare",
+        "path": "assets/icons/Eksi_Kare_2_1_1.gif"
+      },
+      {
+        "id": "purple-neon-eksi-sembolü-1-1",
+        "name": "Eksi Sembolü",
+        "path": "assets/icons/Eksi_Sembolü_1_1.gif"
+      },
+      {
+        "id": "purple-neon-eposta-zarf-1-1",
+        "name": "Eposta Zarf",
+        "path": "assets/icons/Eposta_Zarf_1_1.gif"
+      },
+      {
+        "id": "purple-neon-erkek-1-1",
+        "name": "Erkek",
+        "path": "assets/icons/Erkek_1_1.gif"
+      },
+      {
+        "id": "purple-neon-etiketler-1-1",
+        "name": "Etiketler",
+        "path": "assets/icons/Etiketler_1_1.gif"
+      },
+      {
+        "id": "purple-neon-f-1-1",
+        "name": "F",
+        "path": "assets/icons/F_1_1.gif"
+      },
+      {
+        "id": "purple-neon-facebook-1-1",
+        "name": "Facebook",
+        "path": "assets/icons/Facebook_1_1.gif"
+      },
+      {
+        "id": "purple-neon-fatura-kağıt-1-1",
+        "name": "Fatura Kağıt",
+        "path": "assets/icons/Fatura_Kağıt_1_1.gif"
+      },
+      {
+        "id": "purple-neon-film-şeridi-1-1",
+        "name": "Film Şeridi",
+        "path": "assets/icons/Film_Şeridi_1_1.gif"
+      },
+      {
+        "id": "purple-neon-filtre-aracı-1-1",
+        "name": "Filtre Aracı",
+        "path": "assets/icons/Filtre_Aracı_1_1.gif"
+      },
+      {
+        "id": "purple-neon-fotoğraf-makinesi-1-1",
+        "name": "Fotoğraf Makinesi",
+        "path": "assets/icons/Fotoğraf_Makinesi_1_1.gif"
+      },
+      {
+        "id": "purple-neon-g-1-1",
+        "name": "G",
+        "path": "assets/icons/G_1_1.gif"
+      },
+      {
+        "id": "purple-neon-gelen-kutusu-1-1",
+        "name": "Gelen Kutusu",
+        "path": "assets/icons/Gelen_Kutusu_1_1.gif"
+      },
+      {
+        "id": "purple-neon-geri-bildirim-1-1",
+        "name": "Geri Bildirim",
+        "path": "assets/icons/Geri_Bildirim_1_1.gif"
+      },
+      {
+        "id": "purple-neon-geri-sar-1-1",
+        "name": "Geri Sar",
+        "path": "assets/icons/Geri_Sar_1_1.gif"
+      },
+      {
+        "id": "purple-neon-giriş-yap-1-1",
+        "name": "Giriş Yap",
+        "path": "assets/icons/Giriş_Yap_1_1.gif"
+      },
+      {
+        "id": "purple-neon-grafik-1-1",
+        "name": "Grafik",
+        "path": "assets/icons/Grafik_1_1.gif"
+      },
+      {
+        "id": "purple-neon-grup-profili-1-1",
+        "name": "Grup Profili",
+        "path": "assets/icons/Grup_Profili_1_1.gif"
+      },
+      {
+        "id": "purple-neon-görüntülü-arama-butonu-1-1",
+        "name": "Görüntülü Arama Butonu",
+        "path": "assets/icons/Görüntülü_Arama_Butonu_1_1.gif"
+      },
+      {
+        "id": "purple-neon-göz-açık-1-1",
+        "name": "Göz Açık",
+        "path": "assets/icons/Göz_Açık_1_1.gif"
+      },
+      {
+        "id": "purple-neon-göz-kapalı-1-1",
+        "name": "Göz Kapalı",
+        "path": "assets/icons/Göz_Kapalı_1_1.gif"
+      },
+      {
+        "id": "purple-neon-gülen-yüz-1-1",
+        "name": "Gülen Yüz",
+        "path": "assets/icons/Gülen_Yüz_1_1.gif"
+      },
+      {
+        "id": "purple-neon-güneş-1-1",
+        "name": "Güneş",
+        "path": "assets/icons/Güneş_1_1.gif"
+      },
+      {
+        "id": "purple-neon-güç-butonu-1-1",
+        "name": "Güç Butonu",
+        "path": "assets/icons/Güç_Butonu_1_1.gif"
+      },
+      {
+        "id": "purple-neon-h-1-1",
+        "name": "H",
+        "path": "assets/icons/H_1_1.gif"
+      },
+      {
+        "id": "purple-neon-harici-bağlantı-1-1",
+        "name": "Harici Bağlantı",
+        "path": "assets/icons/Harici_Bağlantı_1_1.gif"
+      },
+      {
+        "id": "purple-neon-harita-i̇şaretçi-1-1",
+        "name": "Harita İşaretçi",
+        "path": "assets/icons/Harita_İşaretçi_1_1.gif"
+      },
+      {
+        "id": "purple-neon-hata-böcek-1-1",
+        "name": "Hata Böcek",
+        "path": "assets/icons/Hata_Böcek_1_1.gif"
+      },
+      {
+        "id": "purple-neon-hayranlar-takipçiler-1-1",
+        "name": "Hayranlar Takipçiler",
+        "path": "assets/icons/Hayranlar_Takipçiler_1_1.gif"
+      },
+      {
+        "id": "purple-neon-hedef-tahtası-1-1",
+        "name": "Hedef Tahtası",
+        "path": "assets/icons/Hedef_Tahtası_1_1.gif"
+      },
+      {
+        "id": "purple-neon-hediye-kutusu-1-1",
+        "name": "Hediye Kutusu",
+        "path": "assets/icons/Hediye_Kutusu_1_1.gif"
+      },
+      {
+        "id": "purple-neon-host-raid-yayın-1-1",
+        "name": "Host Raid Yayın",
+        "path": "assets/icons/Host_Raid_Yayın_1_1.gif"
+      },
+      {
+        "id": "purple-neon-hızlı-i̇leri-sar-1-1",
+        "name": "Hızlı İleri Sar",
+        "path": "assets/icons/Hızlı_İleri_Sar_1_1.gif"
+      },
+      {
+        "id": "purple-neon-i-1-1",
+        "name": "I",
+        "path": "assets/icons/I_1_1.gif"
+      },
+      {
+        "id": "purple-neon-j-1-1",
+        "name": "J",
+        "path": "assets/icons/J_1_1.gif"
+      },
+      {
+        "id": "purple-neon-k-1-1",
+        "name": "K",
+        "path": "assets/icons/K_1_1.gif"
+      },
+      {
+        "id": "purple-neon-kadeh-bardak-1-1",
+        "name": "Kadeh Bardak",
+        "path": "assets/icons/Kadeh_Bardak_1_1.gif"
+      },
+      {
+        "id": "purple-neon-kadın-1-1",
+        "name": "Kadın",
+        "path": "assets/icons/Kadın_1_1.gif"
+      },
+      {
+        "id": "purple-neon-kahve-1-1",
+        "name": "Kahve",
+        "path": "assets/icons/Kahve_1_1.gif"
+      },
+      {
+        "id": "purple-neon-kaldır-butonu-1-1",
+        "name": "Kaldır Butonu",
+        "path": "assets/icons/Kaldır_Butonu_1_1.gif"
+      },
+      {
+        "id": "purple-neon-kaldır-sembolü-1-1",
+        "name": "Kaldır Sembolü",
+        "path": "assets/icons/Kaldır_Sembolü_1_1.gif"
+      },
+      {
+        "id": "purple-neon-kalp-dolu-1-1",
+        "name": "Kalp Dolu",
+        "path": "assets/icons/Kalp_Dolu_1_1.gif"
+      },
+      {
+        "id": "purple-neon-kalp-dış-hat-1-1",
+        "name": "Kalp Dış Hat",
+        "path": "assets/icons/Kalp_Dış_Hat_1_1.gif"
+      },
+      {
+        "id": "purple-neon-kamera-1-1",
+        "name": "Kamera",
+        "path": "assets/icons/Kamera_1_1.gif"
+      },
+      {
+        "id": "purple-neon-kare-ekle-butonu-1-1",
+        "name": "Kare Ekle Butonu",
+        "path": "assets/icons/Kare_Ekle_Butonu_1_1.gif"
+      },
+      {
+        "id": "purple-neon-kayıt-1-1",
+        "name": "Kayıt",
+        "path": "assets/icons/Kayıt_1_1.gif"
+      },
+      {
+        "id": "purple-neon-kilit-açık-1-1",
+        "name": "Kilit Açık",
+        "path": "assets/icons/Kilit_Açık_1_1.gif"
+      },
+      {
+        "id": "purple-neon-klasör-1-1",
+        "name": "Klasör",
+        "path": "assets/icons/Klasör_1_1.gif"
+      },
+      {
+        "id": "purple-neon-klasör-aç-1-1",
+        "name": "Klasör Aç",
+        "path": "assets/icons/Klasör_Aç_1_1.gif"
+      },
+      {
+        "id": "purple-neon-kod-1-1",
+        "name": "Kod",
+        "path": "assets/icons/Kod_1_1.gif"
+      },
+      {
+        "id": "purple-neon-kontrol-paneli-1-1",
+        "name": "Kontrol Paneli",
+        "path": "assets/icons/Kontrol_Paneli_1_1.gif"
+      },
+      {
+        "id": "purple-neon-konum-1-1",
+        "name": "Konum",
+        "path": "assets/icons/Konum_1_1.gif"
+      },
+      {
+        "id": "purple-neon-kulaklık-1-1",
+        "name": "Kulaklık",
+        "path": "assets/icons/Kulaklık_1_1.gif"
+      },
+      {
+        "id": "purple-neon-kullanıcı-1-1",
+        "name": "Kullanıcı",
+        "path": "assets/icons/Kullanıcı_1_1.gif"
+      },
+      {
+        "id": "purple-neon-kupa-ödül-1-1",
+        "name": "Kupa Ödül",
+        "path": "assets/icons/Kupa_Ödül_1_1.gif"
+      },
+      {
+        "id": "purple-neon-kutu-i̇çi-yukarı-üçgen-1-1",
+        "name": "Kutu İçi Yukarı Üçgen",
+        "path": "assets/icons/Kutu_İçi_Yukarı_Üçgen_1_1.gif"
+      },
+      {
+        "id": "purple-neon-kısa-ok-1-1",
+        "name": "Kısa Ok",
+        "path": "assets/icons/Kısa_Ok_1_1.gif"
+      },
+      {
+        "id": "purple-neon-l-1-1",
+        "name": "L",
+        "path": "assets/icons/L_1_1.gif"
+      },
+      {
+        "id": "purple-neon-linkedin-1-1",
+        "name": "LinkedIn",
+        "path": "assets/icons/LinkedIn_1_1.gif"
+      },
+      {
+        "id": "purple-neon-liste-1-1",
+        "name": "Liste",
+        "path": "assets/icons/Liste_1_1.gif"
+      },
+      {
+        "id": "purple-neon-m-1-1",
+        "name": "M",
+        "path": "assets/icons/M_1_1.gif"
+      },
+      {
+        "id": "purple-neon-masaüstü-monitör-1-1",
+        "name": "Masaüstü Monitör",
+        "path": "assets/icons/Masaüstü_Monitör_1_1.gif"
+      },
+      {
+        "id": "purple-neon-metin-dosyası-1-1-1",
+        "name": "Metin Dosyası",
+        "path": "assets/icons/Metin_Dosyası_1_1_1.gif"
+      },
+      {
+        "id": "purple-neon-mikrofon-1-1",
+        "name": "Mikrofon",
+        "path": "assets/icons/Mikrofon_1_1.gif"
+      },
+      {
+        "id": "purple-neon-mikrofon-2-1-1",
+        "name": "Mikrofon",
+        "path": "assets/icons/Mikrofon_2_1_1.gif"
+      },
+      {
+        "id": "purple-neon-mikrofon-kapalı-1-1",
+        "name": "Mikrofon Kapalı",
+        "path": "assets/icons/Mikrofon_Kapalı_1_1.gif"
+      },
+      {
+        "id": "purple-neon-müzik-kulaklığı-1-1",
+        "name": "Müzik Kulaklığı",
+        "path": "assets/icons/Müzik_Kulaklığı_1_1.gif"
+      },
+      {
+        "id": "purple-neon-müzik-notası-1-1",
+        "name": "Müzik Notası",
+        "path": "assets/icons/Müzik_Notası_1_1.gif"
+      },
+      {
+        "id": "purple-neon-müzik-zili-1-1",
+        "name": "Müzik Zili",
+        "path": "assets/icons/Müzik_Zili_1_1.gif"
+      },
+      {
+        "id": "purple-neon-müzik-zili-dış-hat-1-1",
+        "name": "Müzik Zili Dış Hat",
+        "path": "assets/icons/Müzik_Zili_Dış_Hat_1_1.gif"
+      },
+      {
+        "id": "purple-neon-n-1-1",
+        "name": "N",
+        "path": "assets/icons/N_1_1.gif"
+      },
+      {
+        "id": "purple-neon-nokta-ve-daire-1-1",
+        "name": "Nokta ve Daire",
+        "path": "assets/icons/Nokta_ve_Daire_1_1.gif"
+      },
+      {
+        "id": "purple-neon-noktalı-yükleyici-1-1",
+        "name": "Noktalı Yükleyici",
+        "path": "assets/icons/Noktalı_Yükleyici_1_1.gif"
+      },
+      {
+        "id": "purple-neon-numaralı-liste-1-1",
+        "name": "Numaralı Liste",
+        "path": "assets/icons/Numaralı_Liste_1_1.gif"
+      },
+      {
+        "id": "purple-neon-numaraya-göre-sırala-1-1",
+        "name": "Numaraya Göre Sırala",
+        "path": "assets/icons/Numaraya_Göre_Sırala_1_1.gif"
+      },
+      {
+        "id": "purple-neon-o-1-1",
+        "name": "O",
+        "path": "assets/icons/O_1_1.gif"
+      },
+      {
+        "id": "purple-neon-onay-i̇şareti-1-1",
+        "name": "Onay İşareti",
+        "path": "assets/icons/Onay_İşareti_1_1.gif"
+      },
+      {
+        "id": "purple-neon-oynat-butonu-1-1",
+        "name": "Oynat Butonu",
+        "path": "assets/icons/Oynat_Butonu_1_1.gif"
+      },
+      {
+        "id": "purple-neon-oynat-daire-1-1",
+        "name": "Oynat Daire",
+        "path": "assets/icons/Oynat_Daire_1_1.gif"
+      },
+      {
+        "id": "purple-neon-oynat-i̇şareti-1-1",
+        "name": "Oynat İşareti",
+        "path": "assets/icons/Oynat_İşareti_1_1.gif"
+      },
+      {
+        "id": "purple-neon-oyun-kolu-1-1",
+        "name": "Oyun Kolu",
+        "path": "assets/icons/Oyun_Kolu_1_1.gif"
+      },
+      {
+        "id": "purple-neon-p-1-1",
+        "name": "P",
+        "path": "assets/icons/P_1_1.gif"
+      },
+      {
+        "id": "purple-neon-paylaş-1-1",
+        "name": "Paylaş",
+        "path": "assets/icons/Paylaş_1_1.gif"
+      },
+      {
+        "id": "purple-neon-pencere-daralt-1-1",
+        "name": "Pencere Daralt",
+        "path": "assets/icons/Pencere_Daralt_1_1.gif"
+      },
+      {
+        "id": "purple-neon-pinterest-1-1",
+        "name": "Pinterest",
+        "path": "assets/icons/Pinterest_1_1.gif"
+      },
+      {
+        "id": "purple-neon-qr-kod-1-1",
+        "name": "QR Kod",
+        "path": "assets/icons/QR_Kod_1_1.gif"
+      },
+      {
+        "id": "purple-neon-q-1-1",
+        "name": "Q",
+        "path": "assets/icons/Q_1_1.gif"
+      },
+      {
+        "id": "purple-neon-r-1-1",
+        "name": "R",
+        "path": "assets/icons/R_1_1.gif"
+      },
+      {
+        "id": "purple-neon-reklam-1-1-1",
+        "name": "Reklam",
+        "path": "assets/icons/Reklam_1_1_1.gif"
+      },
+      {
+        "id": "purple-neon-renren-1-1",
+        "name": "RenRen",
+        "path": "assets/icons/RenRen_1_1.gif"
+      },
+      {
+        "id": "purple-neon-resim-görsel-1-1",
+        "name": "Resim Görsel",
+        "path": "assets/icons/Resim_Görsel_1_1.gif"
+      },
+      {
+        "id": "purple-neon-retweet-1-1",
+        "name": "Retweet",
+        "path": "assets/icons/Retweet_1_1.gif"
+      },
+      {
+        "id": "purple-neon-roket-1-1",
+        "name": "Roket",
+        "path": "assets/icons/Roket_1_1.gif"
+      },
+      {
+        "id": "purple-neon-s-1-1",
+        "name": "S",
+        "path": "assets/icons/S_1_1.gif"
+      },
+      {
+        "id": "purple-neon-saat-zaman-1-1",
+        "name": "Saat Zaman",
+        "path": "assets/icons/Saat_Zaman_1_1.gif"
+      },
+      {
+        "id": "purple-neon-sabit-disk-1-1",
+        "name": "Sabit Disk",
+        "path": "assets/icons/Sabit_Disk_1_1.gif"
+      },
+      {
+        "id": "purple-neon-sağ-daire-ok-1-1",
+        "name": "Sağ Daire Ok",
+        "path": "assets/icons/Sağ_Daire_Ok_1_1.gif"
+      },
+      {
+        "id": "purple-neon-sağ-ok-daire-1-1",
+        "name": "Sağ Ok Daire",
+        "path": "assets/icons/Sağ_Ok_Daire_1_1.gif"
+      },
+      {
+        "id": "purple-neon-sağ-parmak-i̇şareti-1-1",
+        "name": "Sağ Parmak İşareti",
+        "path": "assets/icons/Sağ_Parmak_İşareti_1_1.gif"
+      },
+      {
+        "id": "purple-neon-sağ-tırnak-i̇şareti-1-1",
+        "name": "Sağ Tırnak İşareti",
+        "path": "assets/icons/Sağ_Tırnak_İşareti_1_1.gif"
+      },
+      {
+        "id": "purple-neon-sağ-şevron-1-1",
+        "name": "Sağ Şevron",
+        "path": "assets/icons/Sağ_Şevron_1_1.gif"
+      },
+      {
+        "id": "purple-neon-sağ-şevron-daire-1-1",
+        "name": "Sağ Şevron Daire",
+        "path": "assets/icons/Sağ_Şevron_Daire_1_1.gif"
+      },
+      {
+        "id": "purple-neon-sağa-açı-oku-1-1",
+        "name": "Sağa Açı Oku",
+        "path": "assets/icons/Sağa_Açı_Oku_1_1.gif"
+      },
+      {
+        "id": "purple-neon-sağa-yönlü-ok-1-1",
+        "name": "Sağa Yönlü Ok",
+        "path": "assets/icons/Sağa_Yönlü_Ok_1_1.gif"
+      },
+      {
+        "id": "purple-neon-sağa-üçgen-1-1",
+        "name": "Sağa Üçgen",
+        "path": "assets/icons/Sağa_Üçgen_1_1.gif"
+      },
+      {
+        "id": "purple-neon-seviye-atla-1-1",
+        "name": "Seviye Atla",
+        "path": "assets/icons/Seviye_Atla_1_1.gif"
+      },
+      {
+        "id": "purple-neon-sihirli-değnek-1-1",
+        "name": "Sihirli Değnek",
+        "path": "assets/icons/Sihirli_Değnek_1_1.gif"
+      },
+      {
+        "id": "purple-neon-silgi-1-1",
+        "name": "Silgi",
+        "path": "assets/icons/Silgi_1_1.gif"
+      },
+      {
+        "id": "purple-neon-sohbet-1-1-1",
+        "name": "Sohbet",
+        "path": "assets/icons/Sohbet_1_1_1.gif"
+      },
+      {
+        "id": "purple-neon-sol-daire-ok-1-1",
+        "name": "Sol Daire Ok",
+        "path": "assets/icons/Sol_Daire_Ok_1_1.gif"
+      },
+      {
+        "id": "purple-neon-sol-el-i̇şareti-1-1",
+        "name": "Sol El İşareti",
+        "path": "assets/icons/Sol_El_İşareti_1_1.gif"
+      },
+      {
+        "id": "purple-neon-sol-ok-1-1-1",
+        "name": "Sol Ok",
+        "path": "assets/icons/Sol_Ok_1_1_1.gif"
+      },
+      {
+        "id": "purple-neon-sol-tırnak-i̇şareti-1-1",
+        "name": "Sol Tırnak İşareti",
+        "path": "assets/icons/Sol_Tırnak_İşareti_1_1.gif"
+      },
+      {
+        "id": "purple-neon-sol-üçgen-1-1-1",
+        "name": "Sol Üçgen",
+        "path": "assets/icons/Sol_Üçgen_1_1_1.gif"
+      },
+      {
+        "id": "purple-neon-sol-şevron-daire-1-1",
+        "name": "Sol Şevron Daire",
+        "path": "assets/icons/Sol_Şevron_Daire_1_1.gif"
+      },
+      {
+        "id": "purple-neon-sol-şevron-oku-1-1",
+        "name": "Sol Şevron Oku",
+        "path": "assets/icons/Sol_Şevron_Oku_1_1.gif"
+      },
+      {
+        "id": "purple-neon-sola-açı-oku-1-1",
+        "name": "Sola Açı Oku",
+        "path": "assets/icons/Sola_Açı_Oku_1_1.gif"
+      },
+      {
+        "id": "purple-neon-sola-yönlü-ok-1-1",
+        "name": "Sola Yönlü Ok",
+        "path": "assets/icons/Sola_Yönlü_Ok_1_1.gif"
+      },
+      {
+        "id": "purple-neon-sonraki-adım-1-1",
+        "name": "Sonraki Adım",
+        "path": "assets/icons/Sonraki_Adım_1_1.gif"
+      },
+      {
+        "id": "purple-neon-soru-i̇şareti-1-1",
+        "name": "Soru İşareti",
+        "path": "assets/icons/Soru_İşareti_1_1.gif"
+      },
+      {
+        "id": "purple-neon-sıfır-1-1",
+        "name": "Sıfır",
+        "path": "assets/icons/Sıfır_1_1.gif"
+      },
+      {
+        "id": "purple-neon-sırala-düzenle-1-1",
+        "name": "Sırala Düzenle",
+        "path": "assets/icons/Sırala_Düzenle_1_1.gif"
+      },
+      {
+        "id": "purple-neon-sıraya-göre-sırala-1-1",
+        "name": "Sıraya Göre Sırala",
+        "path": "assets/icons/Sıraya_Göre_Sırala_1_1.gif"
+      },
+      {
+        "id": "purple-neon-t-1-1",
+        "name": "T",
+        "path": "assets/icons/T_1_1.gif"
+      },
+      {
+        "id": "purple-neon-tablet-1-1",
+        "name": "Tablet",
+        "path": "assets/icons/Tablet_1_1.gif"
+      },
+      {
+        "id": "purple-neon-tablo-izgara-1-1",
+        "name": "Tablo Izgara",
+        "path": "assets/icons/Tablo_Izgara_1_1.gif"
+      },
+      {
+        "id": "purple-neon-takvim-tarih-1-1",
+        "name": "Takvim Tarih",
+        "path": "assets/icons/Takvim_Tarih_1_1.gif"
+      },
+      {
+        "id": "purple-neon-tam-ekran-1-1",
+        "name": "Tam Ekran",
+        "path": "assets/icons/Tam_Ekran_1_1.gif"
+      },
+      {
+        "id": "purple-neon-taşıma-seçeneği-1-1",
+        "name": "Taşıma Seçeneği",
+        "path": "assets/icons/Taşıma_Seçeneği_1_1.gif"
+      },
+      {
+        "id": "purple-neon-terminal-1-1",
+        "name": "Terminal",
+        "path": "assets/icons/Terminal_1_1.gif"
+      },
+      {
+        "id": "purple-neon-ters-sırala-1-1",
+        "name": "Ters Sırala",
+        "path": "assets/icons/Ters_Sırala_1_1.gif"
+      },
+      {
+        "id": "purple-neon-twitch-1-1",
+        "name": "Twitch",
+        "path": "assets/icons/Twitch_1_1.gif"
+      },
+      {
+        "id": "purple-neon-twitter-1-1",
+        "name": "Twitter",
+        "path": "assets/icons/Twitter_1_1.gif"
+      },
+      {
+        "id": "purple-neon-u-1-1",
+        "name": "U",
+        "path": "assets/icons/U_1_1.gif"
+      },
+      {
+        "id": "purple-neon-uzun-sağ-ok-1-1",
+        "name": "Uzun Sağ Ok",
+        "path": "assets/icons/Uzun_Sağ_Ok_1_1.gif"
+      },
+      {
+        "id": "purple-neon-uzun-sol-ok-1-1",
+        "name": "Uzun Sol Ok",
+        "path": "assets/icons/Uzun_Sol_Ok_1_1.gif"
+      },
+      {
+        "id": "purple-neon-uzun-yukarı-ok-1-1",
+        "name": "Uzun Yukarı Ok",
+        "path": "assets/icons/Uzun_Yukarı_Ok_1_1.gif"
+      },
+      {
+        "id": "purple-neon-v-1-1",
+        "name": "V",
+        "path": "assets/icons/V_1_1.gif"
+      },
+      {
+        "id": "purple-neon-video-oynat-butonu-1-1",
+        "name": "Video Oynat Butonu",
+        "path": "assets/icons/Video_Oynat_Butonu_1_1.gif"
+      },
+      {
+        "id": "purple-neon-w-1-1",
+        "name": "W",
+        "path": "assets/icons/W_1_1.gif"
+      },
+      {
+        "id": "purple-neon-x-1-1",
+        "name": "X",
+        "path": "assets/icons/X_1_1.gif"
+      },
+      {
+        "id": "purple-neon-y-1-1",
+        "name": "Y",
+        "path": "assets/icons/Y_1_1.gif"
+      },
+      {
+        "id": "purple-neon-yanıtla-1-1",
+        "name": "Yanıtla",
+        "path": "assets/icons/Yanıtla_1_1.gif"
+      },
+      {
+        "id": "purple-neon-yanıtla-2-1-1",
+        "name": "Yanıtla",
+        "path": "assets/icons/Yanıtla_2_1_1.gif"
+      },
+      {
+        "id": "purple-neon-yapıştır-1-1",
+        "name": "Yapıştır",
+        "path": "assets/icons/Yapıştır_1_1.gif"
+      },
+      {
+        "id": "purple-neon-yasak-sembolü-1-1",
+        "name": "Yasak Sembolü",
+        "path": "assets/icons/Yasak_Sembolü_1_1.gif"
+      },
+      {
+        "id": "purple-neon-yatay-boyutlandır-1-1",
+        "name": "Yatay Boyutlandır",
+        "path": "assets/icons/Yatay_Boyutlandır_1_1.gif"
+      },
+      {
+        "id": "purple-neon-yazdırma-aracı-1-1",
+        "name": "Yazdırma Aracı",
+        "path": "assets/icons/Yazdırma_Aracı_1_1.gif"
+      },
+      {
+        "id": "purple-neon-yazı-tipi-sembolü-1-1",
+        "name": "Yazı Tipi Sembolü",
+        "path": "assets/icons/Yazı_Tipi_Sembolü_1_1.gif"
+      },
+      {
+        "id": "purple-neon-yenile-1-1",
+        "name": "Yenile",
+        "path": "assets/icons/Yenile_1_1.gif"
+      },
+      {
+        "id": "purple-neon-yenileme-oku-1-1",
+        "name": "Yenileme Oku",
+        "path": "assets/icons/Yenileme_Oku_1_1.gif"
+      },
+      {
+        "id": "purple-neon-yorum-dolu-1-1",
+        "name": "Yorum Dolu",
+        "path": "assets/icons/Yorum_Dolu_1_1.gif"
+      },
+      {
+        "id": "purple-neon-youtube-1-1",
+        "name": "YouTube",
+        "path": "assets/icons/YouTube_1_1.gif"
+      },
+      {
+        "id": "purple-neon-yukarı-el-i̇şareti-1-1",
+        "name": "Yukarı El İşareti",
+        "path": "assets/icons/Yukarı_El_İşareti_1_1.gif"
+      },
+      {
+        "id": "purple-neon-yukarı-ok-1-1",
+        "name": "Yukarı Ok",
+        "path": "assets/icons/Yukarı_Ok_1_1.gif"
+      },
+      {
+        "id": "purple-neon-yukarı-ok-daire-1-1",
+        "name": "Yukarı Ok Daire",
+        "path": "assets/icons/Yukarı_Ok_Daire_1_1.gif"
+      },
+      {
+        "id": "purple-neon-yukarı-ok-düz-1-1",
+        "name": "Yukarı Ok Düz",
+        "path": "assets/icons/Yukarı_Ok_Düz_1_1.gif"
+      },
+      {
+        "id": "purple-neon-yukarı-sırala-1-1",
+        "name": "Yukarı Sırala",
+        "path": "assets/icons/Yukarı_Sırala_1_1.gif"
+      },
+      {
+        "id": "purple-neon-yukarı-üçgen-1-1",
+        "name": "Yukarı Üçgen",
+        "path": "assets/icons/Yukarı_Üçgen_1_1.gif"
+      },
+      {
+        "id": "purple-neon-yukarı-şevron-1-1",
+        "name": "Yukarı Şevron",
+        "path": "assets/icons/Yukarı_Şevron_1_1.gif"
+      },
+      {
+        "id": "purple-neon-yukarı-şevron-2-1-1",
+        "name": "Yukarı Şevron",
+        "path": "assets/icons/Yukarı_Şevron_2_1_1.gif"
+      },
+      {
+        "id": "purple-neon-yukarı-şevron-oku-1-1",
+        "name": "Yukarı Şevron Oku",
+        "path": "assets/icons/Yukarı_Şevron_Oku_1_1.gif"
+      },
+      {
+        "id": "purple-neon-yıldız-i̇şareti-1-1",
+        "name": "Yıldız İşareti",
+        "path": "assets/icons/Yıldız_İşareti_1_1.gif"
+      },
+      {
+        "id": "purple-neon-z-1-1",
+        "name": "Z",
+        "path": "assets/icons/Z_1_1.gif"
+      },
+      {
+        "id": "purple-neon-çarpı-i̇şareti-1-1",
+        "name": "Çarpı İşareti",
+        "path": "assets/icons/Çarpı_İşareti_1_1.gif"
+      },
+      {
+        "id": "purple-neon-çift-açı-sağ-1-1",
+        "name": "Çift Açı Sağ",
+        "path": "assets/icons/Çift_Açı_Sağ_1_1.gif"
+      },
+      {
+        "id": "purple-neon-çift-açı-sol-1-1",
+        "name": "Çift Açı Sol",
+        "path": "assets/icons/Çift_Açı_Sol_1_1.gif"
+      },
+      {
+        "id": "purple-neon-çift-ok-1-1",
+        "name": "Çift Ok",
+        "path": "assets/icons/Çift_Ok_1_1.gif"
+      },
+      {
+        "id": "purple-neon-çift-sol-ok-1-1",
+        "name": "Çift Sol Ok",
+        "path": "assets/icons/Çift_Sol_Ok_1_1.gif"
+      },
+      {
+        "id": "purple-neon-çöp-kutusu-1-1",
+        "name": "Çöp Kutusu",
+        "path": "assets/icons/Çöp_Kutusu_1_1.gif"
+      },
+      {
+        "id": "purple-neon-çıkış-yap-1-1",
+        "name": "Çıkış Yap",
+        "path": "assets/icons/Çıkış_Yap_1_1.gif"
+      },
+      {
+        "id": "purple-neon-önceki-adım-1-1",
+        "name": "Önceki Adım",
+        "path": "assets/icons/Önceki_Adım_1_1.gif"
+      },
+      {
+        "id": "purple-neon-özelliğe-göre-sırala-1-1",
+        "name": "Özelliğe Göre Sırala",
+        "path": "assets/icons/Özelliğe_Göre_Sırala_1_1.gif"
+      },
+      {
+        "id": "purple-neon-özelliğe-göre-sırala-2-1-1",
+        "name": "Özelliğe Göre Sırala",
+        "path": "assets/icons/Özelliğe_Göre_Sırala_2_1_1.gif"
+      },
+      {
+        "id": "purple-neon-özçekim-1-1",
+        "name": "Özçekim",
+        "path": "assets/icons/Özçekim_1_1.gif"
+      },
+      {
+        "id": "purple-neon-ünlem-1-1",
+        "name": "Ünlem",
+        "path": "assets/icons/Ünlem_1_1.gif"
+      },
+      {
+        "id": "purple-neon-üzgün-yüz-1-1",
+        "name": "Üzgün Yüz",
+        "path": "assets/icons/Üzgün_Yüz_1_1.gif"
+      },
+      {
+        "id": "purple-neon-üç-1-1",
+        "name": "Üç",
+        "path": "assets/icons/Üç_1_1.gif"
+      },
+      {
+        "id": "purple-neon-i̇leri-butonu-1-1",
+        "name": "İleri Butonu",
+        "path": "assets/icons/İleri_Butonu_1_1.gif"
+      },
+      {
+        "id": "purple-neon-i̇mleç-1-1",
+        "name": "İmleç",
+        "path": "assets/icons/İmleç_1_1.gif"
+      },
+      {
+        "id": "purple-neon-i̇nce-ok-uçları-1-1",
+        "name": "İnce Ok Uçları",
+        "path": "assets/icons/İnce_Ok_Uçları_1_1.gif"
+      },
+      {
+        "id": "purple-neon-i̇ndir-sembolü-1-1",
+        "name": "İndir Sembolü",
+        "path": "assets/icons/İndir_Sembolü_1_1.gif"
+      },
+      {
+        "id": "purple-neon-i̇zleyici-1-1",
+        "name": "İzleyici",
+        "path": "assets/icons/İzleyici_1_1.gif"
+      },
+      {
+        "id": "purple-neon-i̇şaretleyici-1-1",
+        "name": "İşaretleyici",
+        "path": "assets/icons/İşaretleyici_1_1.gif"
+      },
+      {
+        "id": "purple-neon-şemsiye-1-1",
+        "name": "Şemsiye",
+        "path": "assets/icons/Şemsiye_1_1.gif"
+      },
+      {
+        "id": "purple-neon-şimşek-1-1",
+        "name": "Şimşek",
+        "path": "assets/icons/Şimşek_1_1.gif"
+      }
+    ],
+    "sounds": []
+  }
+}

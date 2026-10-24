@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purple Neon Gif Pack — 15 Tuşlu Stream Deck & evoX İnteraktif Galeri</title>
+  <style>
+    :root {
+      --bg: #0b0711;
+      --panel: #160e22;
+      --card: #201332;
+      --card-hover: #2e1a47;
+      --accent: #c084fc;
+      --accent-glow: rgba(192, 132, 252, 0.45);
+      --text: #fdf2f8;
+      --text-muted: #d8b4e2;
+      --border: #3d245c;
+      --deck-body: #100a18;
+      --deck-bezel: #251733;
+      --key-border: #44285e;
+      --key-glow: 0 0 16px rgba(192, 132, 252, 0.4);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      background-image: radial-gradient(circle at 50% 0%, #2c1247 0%, #0b0711 75%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: rgba(22, 14, 34, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 1.1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .brand { display: flex; align-items: center; gap: 1rem; }
+    .brand-logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #c084fc, #7e22ce);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px var(--accent-glow);
+      overflow: hidden;
+    }
+    .brand-logo img { width: 100%; height: 100%; object-fit: cover; }
+    .brand h1 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #fff, #d8b4fe);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .brand p { font-size: 0.82rem; color: var(--text-muted); }
+    .header-actions { display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap; }
+    .btn {
+      background: linear-gradient(135deg, #c084fc, #9333ea);
+      color: #100a18;
+      padding: 0.55rem 1.2rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.88rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.25s;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 15px var(--accent-glow);
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 22px var(--accent-glow); }
+    .btn-outline {
+      background: rgba(32, 19, 50, 0.6);
+      border: 1px solid var(--border);
+      color: var(--text);
+      box-shadow: none;
+    }
+    .btn-outline:hover { border-color: var(--accent); background: rgba(192, 132, 252, 0.15); }
+    
+    main { flex: 1; max-width: 1400px; margin: 0 auto; padding: 2.2rem 1.5rem; width: 100%; }
+    
+    .simulator-container {
+      background: linear-gradient(180deg, rgba(28, 16, 44, 0.9) 0%, rgba(16, 9, 26, 0.95) 100%);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 2.2rem;
+      margin-bottom: 2.8rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65);
+    }
+    .sim-header { text-align: center; margin-bottom: 1.8rem; }
+    .sim-badge {
+      display: inline-block;
+      padding: 0.3rem 0.8rem;
+      background: rgba(192, 132, 252, 0.15);
+      border: 1px solid rgba(192, 132, 252, 0.35);
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0.6rem;
+    }
+    .sim-header h2 { font-size: 1.6rem; font-weight: 800; }
+    .sim-header p { font-size: 0.9rem; color: var(--text-muted); }
+    
+    .deck-frame {
+      background: linear-gradient(145deg, #181022, #0d0714);
+      border: 3px solid var(--deck-bezel);
+      border-radius: 28px;
+      padding: 24px 26px;
+      box-shadow: inset 0 2px 10px rgba(255, 255, 255, 0.05), inset 0 -8px 20px rgba(0, 0, 0, 0.9), 0 18px 45px rgba(0, 0, 0, 0.8), 0 0 30px rgba(192, 132, 252, 0.15);
+      position: relative;
+    }
+    .deck-frame::after {
+      content: "STREAM DECK • EVOX PURPLE NEON";
+      position: absolute;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.65rem;
+      letter-spacing: 2px;
+      font-weight: 800;
+      color: rgba(216, 180, 226, 0.35);
+    }
+    .deck-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 84px);
+      grid-template-rows: repeat(3, 84px);
+      gap: 14px;
+      margin-bottom: 12px;
+    }
+    .deck-key {
+      width: 84px;
+      height: 84px;
+      background: radial-gradient(circle at 50% 30%, #1e132b 0%, #0d0714 100%);
+      border: 2px solid var(--key-border);
+      border-radius: 16px;
+      overflow: hidden;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+      position: relative;
+    }
+    .deck-key:hover {
+      border-color: var(--accent);
+      transform: translateY(-3px) scale(1.04);
+      box-shadow: var(--key-glow), 0 8px 18px rgba(0, 0, 0, 0.8);
+    }
+    .deck-key.active-slot {
+      border-color: #fff;
+      box-shadow: 0 0 24px rgba(192, 132, 252, 0.9), inset 0 0 12px rgba(255, 255, 255, 0.4);
+      transform: scale(1.06);
+    }
+    .deck-key img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .deck-key .slot-num {
+      position: absolute;
+      top: 4px;
+      left: 6px;
+      font-size: 0.6rem;
+      font-weight: 800;
+      color: rgba(255, 255, 255, 0.5);
+      background: rgba(0, 0, 0, 0.5);
+      padding: 1px 4px;
+      border-radius: 4px;
+      pointer-events: none;
+    }
+    .sim-controls { margin-top: 1.4rem; display: flex; gap: 0.8rem; justify-content: center; }
+    .sim-btn {
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 0.45rem 1rem;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .sim-btn:hover { background: var(--panel); color: var(--text); border-color: var(--accent); }
+    
+    .search-input-wrap { position: relative; margin-bottom: 2rem; width: 100%; }
+    .search-input {
+      width: 100%;
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 0.85rem 1.4rem 0.85rem 3rem;
+      border-radius: 14px;
+      font-size: 1rem;
+      outline: none;
+      transition: all 0.2s;
+    }
+    .search-input:focus { border-color: var(--accent); box-shadow: 0 0 16px var(--accent-glow); }
+    .search-icon { position: absolute; left: 1.1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); }
+    
+    .gallery-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem; }
+    .gallery-title { font-size: 1.1rem; font-weight: 700; }
+    .gallery-count { font-size: 0.85rem; color: var(--text-muted); }
+    
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(136px, 1fr)); gap: 16px; }
+    .icon-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+      transition: all 0.25s;
+      cursor: pointer;
+    }
+    .icon-card:hover {
+      background: var(--card-hover);
+      border-color: var(--accent);
+      transform: translateY(-4px);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.5), 0 0 16px var(--accent-glow);
+    }
+    .icon-card .img-wrap {
+      width: 88px;
+      height: 88px;
+      border-radius: 14px;
+      background: #100a18;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .icon-card img { width: 100%; height: 100%; object-fit: cover; }
+    .icon-name {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 100%;
+    }
+    .icon-cat { font-size: 0.68rem; color: var(--text-muted); }
+    
+    .hint-toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: rgba(22, 14, 34, 0.95);
+      border: 1px solid var(--accent);
+      color: var(--text);
+      padding: 0.8rem 1.4rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+      font-size: 0.88rem;
+      z-index: 1000;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="brand-logo"><img src="cover.png" alt="Purple Neon"></div>
+      <div>
+        <h1>Purple Neon Gif Pack</h1>
+        <p>250 Hareketli Mor Neon İkon • evoX & Stream Deck</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <a href="Purple Neon Gif Pack.evoxpack" class="btn" download>📦 .evoxpack İndir (250 İkon - 40 MB)</a>
+      <a href="red_neon_gallery.html" class="btn btn-outline">🔴 Red Neon</a>
+      <a href="valorant_gallery.html" class="btn btn-outline">🎯 Valorant</a>
+      <a href="gif_icons_gallery.html" class="btn btn-outline">✨ Gif Icon Packs</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="simulator-container">
+      <div class="sim-header">
+        <span class="sim-badge">15 Tuşlu Donanım Konsolu</span>
+        <h2>Stream Deck & evoX Canlı Konsol Simülatörü</h2>
+        <p>Aşağıdaki galeriden herhangi bir hareketli ikona tıklayarak seçili tuşa yerleştirin</p>
+      </div>
+      <div class="deck-frame">
+        <div class="deck-grid" id="deckGrid"></div>
+      </div>
+      <div class="sim-controls">
+        <button class="sim-btn" id="btnRandom">🎲 Rastgele 15 Tuş</button>
+        <button class="sim-btn" id="btnReset">↺ Sıfırla</button>
+      </div>
+    </div>
+
+    <div class="search-input-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" class="search-input" placeholder="Mor neon ikon ara (sihirli değnek, ana sayfa, discord, twitch, youtube, mikrofon...)...">
+    </div>
+
+    <div class="gallery-header">
+      <div class="gallery-title" id="galleryTitle">Tüm Mor Neon İkonlar</div>
+      <div class="gallery-count" id="galleryCount">250 İkon Gösteriliyor</div>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </main>
+
+  <div class="hint-toast" id="hintToast">✨ Tuş güncellendi!</div>
+
+  <script>
+    const INITIAL_KEYS = ["Sihirli_Değnek_1_1.gif", "Ana_Sayfa_1_1.gif", "Ateş_1_1.gif", "Ayarlar_1_1.gif", "Discord_1_1.gif", "Twitch_1_1.gif", "Mikrofon_1_1.gif", "YouTube_1_1.gif", "Abone_Yıldızları_1_1.gif", "Şimşek_1_1.gif", "Roket_1_1.gif", "Saat_Zaman_1_1.gif", "Oynat_Butonu_1_1.gif", "Kamera_1_1.gif", "Canlı_Yayın_1_1.gif"];
+    const ASSETS = [{"name": "1", "filename": "1_1_1.gif", "category": "Mor Neon"}, {"name": "2", "filename": "2_1_1.gif", "category": "Mor Neon"}, {"name": "4", "filename": "4_1_1.gif", "category": "Mor Neon"}, {"name": "5", "filename": "5_1_1.gif", "category": "Mor Neon"}, {"name": "7", "filename": "7_1_1.gif", "category": "Mor Neon"}, {"name": "8", "filename": "8_1_1.gif", "category": "Mor Neon"}, {"name": "9", "filename": "9_1_1.gif", "category": "Mor Neon"}, {"name": "A", "filename": "A_1_1.gif", "category": "Mor Neon"}, {"name": "Abone", "filename": "Abone_1_1_1.gif", "category": "Mor Neon"}, {"name": "Abone Yıldızları", "filename": "Abone_Yıldızları_1_1.gif", "category": "Mor Neon"}, {"name": "Alfabetik Sırala", "filename": "Alfabetik_Sırala_1_1.gif", "category": "Mor Neon"}, {"name": "Altı", "filename": "Altı_1_1.gif", "category": "Mor Neon"}, {"name": "Alışveriş Sepeti", "filename": "Alışveriş_Sepeti_1_1.gif", "category": "Mor Neon"}, {"name": "Ana Sayfa", "filename": "Ana_Sayfa_1_1.gif", "category": "Mor Neon"}, {"name": "Arayüz Düzenle", "filename": "Arayüz_Düzenle_1_1.gif", "category": "Mor Neon"}, {"name": "Artı", "filename": "Artı_1_1.gif", "category": "Mor Neon"}, {"name": "Artı Daire", "filename": "Artı_Daire_1_1.gif", "category": "Mor Neon"}, {"name": "Asma Kilit", "filename": "Asma_Kilit_1_1.gif", "category": "Mor Neon"}, {"name": "Ateş", "filename": "Ateş_1_1.gif", "category": "Mor Neon"}, {"name": "Ay Gece", "filename": "Ay_Gece_1_1.gif", "category": "Mor Neon"}, {"name": "Ayarlar", "filename": "Ayarlar_1_1.gif", "category": "Mor Neon"}, {"name": "Aşağı Açı Oku", "filename": "Aşağı_Açı_Oku_1_1.gif", "category": "Mor Neon"}, {"name": "Aşağı El İşareti", "filename": "Aşağı_El_İşareti_1_1.gif", "category": "Mor Neon"}, {"name": "Aşağı Ok", "filename": "Aşağı_Ok_1_1.gif", "category": "Mor Neon"}, {"name": "Aşağı Ok Daire", "filename": "Aşağı_Ok_Daire_1_1.gif", "category": "Mor Neon"}, {"name": "Aşağı Ok Düz", "filename": "Aşağı_Ok_Düz_1_1.gif", "category": "Mor Neon"}, {"name": "Aşağı Sırala", "filename": "Aşağı_Sırala_1_1.gif", "category": "Mor Neon"}, {"name": "Aşağı Yönlü Ok", "filename": "Aşağı_Yönlü_Ok_1_1.gif", "category": "Mor Neon"}, {"name": "Aşağı Üçgen", "filename": "Aşağı_Üçgen_1_1.gif", "category": "Mor Neon"}, {"name": "Aşağı Şevron Daire", "filename": "Aşağı_Şevron_Daire_1_1.gif", "category": "Mor Neon"}, {"name": "Aşağı Şevron Oku", "filename": "Aşağı_Şevron_Oku_1_1.gif", "category": "Mor Neon"}, {"name": "B", "filename": "B_1_1.gif", "category": "Mor Neon"}, {"name": "Bayrak", "filename": "Bayrak_1_1.gif", "category": "Mor Neon"}, {"name": "Belge Kopyala", "filename": "Belge_Kopyala_1_1.gif", "category": "Mor Neon"}, {"name": "Beğen", "filename": "Beğen_1_1.gif", "category": "Mor Neon"}, {"name": "Beğen Başparmak", "filename": "Beğen_Başparmak_1_1.gif", "category": "Mor Neon"}, {"name": "Beğenme Başparmak", "filename": "Beğenme_Başparmak_1_1.gif", "category": "Mor Neon"}, {"name": "Bilgi Butonu", "filename": "Bilgi_Butonu_1_1.gif", "category": "Mor Neon"}, {"name": "Bit Puanı", "filename": "Bit_Puanı_1_1.gif", "category": "Mor Neon"}, {"name": "Boyutu Büyüt", "filename": "Boyutu_Büyüt_1_1.gif", "category": "Mor Neon"}, {"name": "Boş Dosya", "filename": "Boş_Dosya_1_1.gif", "category": "Mor Neon"}, {"name": "C", "filename": "C_1_1.gif", "category": "Mor Neon"}, {"name": "Canlı Yayın", "filename": "Canlı_Yayın_1_1.gif", "category": "Mor Neon"}, {"name": "Cep Telefonu", "filename": "Cep_Telefonu_1_1.gif", "category": "Mor Neon"}, {"name": "D", "filename": "D_1_1.gif", "category": "Mor Neon"}, {"name": "Daire Dış Hat", "filename": "Daire_Dış_Hat_1_1.gif", "category": "Mor Neon"}, {"name": "Depolamaya İndir", "filename": "Depolamaya_İndir_1_1.gif", "category": "Mor Neon"}, {"name": "Destek", "filename": "Destek_1_1.gif", "category": "Mor Neon"}, {"name": "Değişim Okları", "filename": "Değişim_Okları_1_1.gif", "category": "Mor Neon"}, {"name": "Discord", "filename": "Discord_1_1.gif", "category": "Mor Neon"}, {"name": "Dizüstü Bilgisayar", "filename": "Dizüstü_Bilgisayar_1_1.gif", "category": "Mor Neon"}, {"name": "Dolar", "filename": "Dolar_1_1.gif", "category": "Mor Neon"}, {"name": "Dolu Daire", "filename": "Dolu_Daire_1_1.gif", "category": "Mor Neon"}, {"name": "Dosya", "filename": "Dosya_1_1.gif", "category": "Mor Neon"}, {"name": "Dosya Kaydet", "filename": "Dosya_Kaydet_1_1.gif", "category": "Mor Neon"}, {"name": "Doğru İşareti", "filename": "Doğru_İşareti_1_1.gif", "category": "Mor Neon"}, {"name": "Duraklat Sembolü", "filename": "Duraklat_Sembolü_1_1.gif", "category": "Mor Neon"}, {"name": "Duyurucu Spiker", "filename": "Duyurucu_Spiker_1_1.gif", "category": "Mor Neon"}, {"name": "Dünya Küre", "filename": "Dünya_Küre_1_1.gif", "category": "Mor Neon"}, {"name": "E", "filename": "E_1_1.gif", "category": "Mor Neon"}, {"name": "Ekran Görüntüsü", "filename": "Ekran_Görüntüsü_1_1.gif", "category": "Mor Neon"}, {"name": "Eksi Butonu", "filename": "Eksi_Butonu_1_1.gif", "category": "Mor Neon"}, {"name": "Eksi Daire", "filename": "Eksi_Daire_1_1.gif", "category": "Mor Neon"}, {"name": "Eksi Kare", "filename": "Eksi_Kare_1_1.gif", "category": "Mor Neon"}, {"name": "Eksi Kare", "filename": "Eksi_Kare_2_1_1.gif", "category": "Mor Neon"}, {"name": "Eksi Sembolü", "filename": "Eksi_Sembolü_1_1.gif", "category": "Mor Neon"}, {"name": "Eposta Zarf", "filename": "Eposta_Zarf_1_1.gif", "category": "Mor Neon"}, {"name": "Erkek", "filename": "Erkek_1_1.gif", "category": "Mor Neon"}, {"name": "Etiketler", "filename": "Etiketler_1_1.gif", "category": "Mor Neon"}, {"name": "F", "filename": "F_1_1.gif", "category": "Mor Neon"}, {"name": "Facebook", "filename": "Facebook_1_1.gif", "category": "Mor Neon"}, {"name": "Fatura Kağıt", "filename": "Fatura_Kağıt_1_1.gif", "category": "Mor Neon"}, {"name": "Film Şeridi", "filename": "Film_Şeridi_1_1.gif", "category": "Mor Neon"}, {"name": "Filtre Aracı", "filename": "Filtre_Aracı_1_1.gif", "category": "Mor Neon"}, {"name": "Fotoğraf Makinesi", "filename": "Fotoğraf_Makinesi_1_1.gif", "category": "Mor Neon"}, {"name": "G", "filename": "G_1_1.gif", "category": "Mor Neon"}, {"name": "Gelen Kutusu", "filename": "Gelen_Kutusu_1_1.gif", "category": "Mor Neon"}, {"name": "Geri Bildirim", "filename": "Geri_Bildirim_1_1.gif", "category": "Mor Neon"}, {"name": "Geri Sar", "filename": "Geri_Sar_1_1.gif", "category": "Mor Neon"}, {"name": "Giriş Yap", "filename": "Giriş_Yap_1_1.gif", "category": "Mor Neon"}, {"name": "Grafik", "filename": "Grafik_1_1.gif", "category": "Mor Neon"}, {"name": "Grup Profili", "filename": "Grup_Profili_1_1.gif", "category": "Mor Neon"}, {"name": "Görüntülü Arama Butonu", "filename": "Görüntülü_Arama_Butonu_1_1.gif", "category": "Mor Neon"}, {"name": "Göz Açık", "filename": "Göz_Açık_1_1.gif", "category": "Mor Neon"}, {"name": "Göz Kapalı", "filename": "Göz_Kapalı_1_1.gif", "category": "Mor Neon"}, {"name": "Gülen Yüz", "filename": "Gülen_Yüz_1_1.gif", "category": "Mor Neon"}, {"name": "Güneş", "filename": "Güneş_1_1.gif", "category": "Mor Neon"}, {"name": "Güç Butonu", "filename": "Güç_Butonu_1_1.gif", "category": "Mor Neon"}, {"name": "H", "filename": "H_1_1.gif", "category": "Mor Neon"}, {"name": "Harici Bağlantı", "filename": "Harici_Bağlantı_1_1.gif", "category": "Mor Neon"}, {"name": "Harita İşaretçi", "filename": "Harita_İşaretçi_1_1.gif", "category": "Mor Neon"}, {"name": "Hata Böcek", "filename": "Hata_Böcek_1_1.gif", "category": "Mor Neon"}, {"name": "Hayranlar Takipçiler", "filename": "Hayranlar_Takipçiler_1_1.gif", "category": "Mor Neon"}, {"name": "Hedef Tahtası", "filename": "Hedef_Tahtası_1_1.gif", "category": "Mor Neon"}, {"name": "Hediye Kutusu", "filename": "Hediye_Kutusu_1_1.gif", "category": "Mor Neon"}, {"name": "Host Raid Yayın", "filename": "Host_Raid_Yayın_1_1.gif", "category": "Mor Neon"}, {"name": "Hızlı İleri Sar", "filename": "Hızlı_İleri_Sar_1_1.gif", "category": "Mor Neon"}, {"name": "I", "filename": "I_1_1.gif", "category": "Mor Neon"}, {"name": "J", "filename": "J_1_1.gif", "category": "Mor Neon"}, {"name": "K", "filename": "K_1_1.gif", "category": "Mor Neon"}, {"name": "Kadeh Bardak", "filename": "Kadeh_Bardak_1_1.gif", "category": "Mor Neon"}, {"name": "Kadın", "filename": "Kadın_1_1.gif", "category": "Mor Neon"}, {"name": "Kahve", "filename": "Kahve_1_1.gif", "category": "Mor Neon"}, {"name": "Kaldır Butonu", "filename": "Kaldır_Butonu_1_1.gif", "category": "Mor Neon"}, {"name": "Kaldır Sembolü", "filename": "Kaldır_Sembolü_1_1.gif", "category": "Mor Neon"}, {"name": "Kalp Dolu", "filename": "Kalp_Dolu_1_1.gif", "category": "Mor Neon"}, {"name": "Kalp Dış Hat", "filename": "Kalp_Dış_Hat_1_1.gif", "category": "Mor Neon"}, {"name": "Kamera", "filename": "Kamera_1_1.gif", "category": "Mor Neon"}, {"name": "Kare Ekle Butonu", "filename": "Kare_Ekle_Butonu_1_1.gif", "category": "Mor Neon"}, {"name": "Kayıt", "filename": "Kayıt_1_1.gif", "category": "Mor Neon"}, {"name": "Kilit Açık", "filename": "Kilit_Açık_1_1.gif", "category": "Mor Neon"}, {"name": "Klasör", "filename": "Klasör_1_1.gif", "category": "Mor Neon"}, {"name": "Klasör Aç", "filename": "Klasör_Aç_1_1.gif", "category": "Mor Neon"}, {"name": "Kod", "filename": "Kod_1_1.gif", "category": "Mor Neon"}, {"name": "Kontrol Paneli", "filename": "Kontrol_Paneli_1_1.gif", "category": "Mor Neon"}, {"name": "Konum", "filename": "Konum_1_1.gif", "category": "Mor Neon"}, {"name": "Kulaklık", "filename": "Kulaklık_1_1.gif", "category": "Mor Neon"}, {"name": "Kullanıcı", "filename": "Kullanıcı_1_1.gif", "category": "Mor Neon"}, {"name": "Kupa Ödül", "filename": "Kupa_Ödül_1_1.gif", "category": "Mor Neon"}, {"name": "Kutu İçi Yukarı Üçgen", "filename": "Kutu_İçi_Yukarı_Üçgen_1_1.gif", "category": "Mor Neon"}, {"name": "Kısa Ok", "filename": "Kısa_Ok_1_1.gif", "category": "Mor Neon"}, {"name": "L", "filename": "L_1_1.gif", "category": "Mor Neon"}, {"name": "LinkedIn", "filename": "LinkedIn_1_1.gif", "category": "Mor Neon"}, {"name": "Liste", "filename": "Liste_1_1.gif", "category": "Mor Neon"}, {"name": "M", "filename": "M_1_1.gif", "category": "Mor Neon"}, {"name": "Masaüstü Monitör", "filename": "Masaüstü_Monitör_1_1.gif", "category": "Mor Neon"}, {"name": "Metin Dosyası", "filename": "Metin_Dosyası_1_1_1.gif", "category": "Mor Neon"}, {"name": "Mikrofon", "filename": "Mikrofon_1_1.gif", "category": "Mor Neon"}, {"name": "Mikrofon", "filename": "Mikrofon_2_1_1.gif", "category": "Mor Neon"}, {"name": "Mikrofon Kapalı", "filename": "Mikrofon_Kapalı_1_1.gif", "category": "Mor Neon"}, {"name": "Müzik Kulaklığı", "filename": "Müzik_Kulaklığı_1_1.gif", "category": "Mor Neon"}, {"name": "Müzik Notası", "filename": "Müzik_Notası_1_1.gif", "category": "Mor Neon"}, {"name": "Müzik Zili", "filename": "Müzik_Zili_1_1.gif", "category": "Mor Neon"}, {"name": "Müzik Zili Dış Hat", "filename": "Müzik_Zili_Dış_Hat_1_1.gif", "category": "Mor Neon"}, {"name": "N", "filename": "N_1_1.gif", "category": "Mor Neon"}, {"name": "Nokta ve Daire", "filename": "Nokta_ve_Daire_1_1.gif", "category": "Mor Neon"}, {"name": "Noktalı Yükleyici", "filename": "Noktalı_Yükleyici_1_1.gif", "category": "Mor Neon"}, {"name": "Numaralı Liste", "filename": "Numaralı_Liste_1_1.gif", "category": "Mor Neon"}, {"name": "Numaraya Göre Sırala", "filename": "Numaraya_Göre_Sırala_1_1.gif", "category": "Mor Neon"}, {"name": "O", "filename": "O_1_1.gif", "category": "Mor Neon"}, {"name": "Onay İşareti", "filename": "Onay_İşareti_1_1.gif", "category": "Mor Neon"}, {"name": "Oynat Butonu", "filename": "Oynat_Butonu_1_1.gif", "category": "Mor Neon"}, {"name": "Oynat Daire", "filename": "Oynat_Daire_1_1.gif", "category": "Mor Neon"}, {"name": "Oynat İşareti", "filename": "Oynat_İşareti_1_1.gif", "category": "Mor Neon"}, {"name": "Oyun Kolu", "filename": "Oyun_Kolu_1_1.gif", "category": "Mor Neon"}, {"name": "P", "filename": "P_1_1.gif", "category": "Mor Neon"}, {"name": "Paylaş", "filename": "Paylaş_1_1.gif", "category": "Mor Neon"}, {"name": "Pencere Daralt", "filename": "Pencere_Daralt_1_1.gif", "category": "Mor Neon"}, {"name": "Pinterest", "filename": "Pinterest_1_1.gif", "category": "Mor Neon"}, {"name": "QR Kod", "filename": "QR_Kod_1_1.gif", "category": "Mor Neon"}, {"name": "Q", "filename": "Q_1_1.gif", "category": "Mor Neon"}, {"name": "R", "filename": "R_1_1.gif", "category": "Mor Neon"}, {"name": "Reklam", "filename": "Reklam_1_1_1.gif", "category": "Mor Neon"}, {"name": "RenRen", "filename": "RenRen_1_1.gif", "category": "Mor Neon"}, {"name": "Resim Görsel", "filename": "Resim_Görsel_1_1.gif", "category": "Mor Neon"}, {"name": "Retweet", "filename": "Retweet_1_1.gif", "category": "Mor Neon"}, {"name": "Roket", "filename": "Roket_1_1.gif", "category": "Mor Neon"}, {"name": "S", "filename": "S_1_1.gif", "category": "Mor Neon"}, {"name": "Saat Zaman", "filename": "Saat_Zaman_1_1.gif", "category": "Mor Neon"}, {"name": "Sabit Disk", "filename": "Sabit_Disk_1_1.gif", "category": "Mor Neon"}, {"name": "Sağ Daire Ok", "filename": "Sağ_Daire_Ok_1_1.gif", "category": "Mor Neon"}, {"name": "Sağ Ok Daire", "filename": "Sağ_Ok_Daire_1_1.gif", "category": "Mor Neon"}, {"name": "Sağ Parmak İşareti", "filename": "Sağ_Parmak_İşareti_1_1.gif", "category": "Mor Neon"}, {"name": "Sağ Tırnak İşareti", "filename": "Sağ_Tırnak_İşareti_1_1.gif", "category": "Mor Neon"}, {"name": "Sağ Şevron", "filename": "Sağ_Şevron_1_1.gif", "category": "Mor Neon"}, {"name": "Sağ Şevron Daire", "filename": "Sağ_Şevron_Daire_1_1.gif", "category": "Mor Neon"}, {"name": "Sağa Açı Oku", "filename": "Sağa_Açı_Oku_1_1.gif", "category": "Mor Neon"}, {"name": "Sağa Yönlü Ok", "filename": "Sağa_Yönlü_Ok_1_1.gif", "category": "Mor Neon"}, {"name": "Sağa Üçgen", "filename": "Sağa_Üçgen_1_1.gif", "category": "Mor Neon"}, {"name": "Seviye Atla", "filename": "Seviye_Atla_1_1.gif", "category": "Mor Neon"}, {"name": "Sihirli Değnek", "filename": "Sihirli_Değnek_1_1.gif", "category": "Mor Neon"}, {"name": "Silgi", "filename": "Silgi_1_1.gif", "category": "Mor Neon"}, {"name": "Sohbet", "filename": "Sohbet_1_1_1.gif", "category": "Mor Neon"}, {"name": "Sol Daire Ok", "filename": "Sol_Daire_Ok_1_1.gif", "category": "Mor Neon"}, {"name": "Sol El İşareti", "filename": "Sol_El_İşareti_1_1.gif", "category": "Mor Neon"}, {"name": "Sol Ok", "filename": "Sol_Ok_1_1_1.gif", "category": "Mor Neon"}, {"name": "Sol Tırnak İşareti", "filename": "Sol_Tırnak_İşareti_1_1.gif", "category": "Mor Neon"}, {"name": "Sol Üçgen", "filename": "Sol_Üçgen_1_1_1.gif", "category": "Mor Neon"}, {"name": "Sol Şevron Daire", "filename": "Sol_Şevron_Daire_1_1.gif", "category": "Mor Neon"}, {"name": "Sol Şevron Oku", "filename": "Sol_Şevron_Oku_1_1.gif", "category": "Mor Neon"}, {"name": "Sola Açı Oku", "filename": "Sola_Açı_Oku_1_1.gif", "category": "Mor Neon"}, {"name": "Sola Yönlü Ok", "filename": "Sola_Yönlü_Ok_1_1.gif", "category": "Mor Neon"}, {"name": "Sonraki Adım", "filename": "Sonraki_Adım_1_1.gif", "category": "Mor Neon"}, {"name": "Soru İşareti", "filename": "Soru_İşareti_1_1.gif", "category": "Mor Neon"}, {"name": "Sıfır", "filename": "Sıfır_1_1.gif", "category": "Mor Neon"}, {"name": "Sırala Düzenle", "filename": "Sırala_Düzenle_1_1.gif", "category": "Mor Neon"}, {"name": "Sıraya Göre Sırala", "filename": "Sıraya_Göre_Sırala_1_1.gif", "category": "Mor Neon"}, {"name": "T", "filename": "T_1_1.gif", "category": "Mor Neon"}, {"name": "Tablet", "filename": "Tablet_1_1.gif", "category": "Mor Neon"}, {"name": "Tablo Izgara", "filename": "Tablo_Izgara_1_1.gif", "category": "Mor Neon"}, {"name": "Takvim Tarih", "filename": "Takvim_Tarih_1_1.gif", "category": "Mor Neon"}, {"name": "Tam Ekran", "filename": "Tam_Ekran_1_1.gif", "category": "Mor Neon"}, {"name": "Taşıma Seçeneği", "filename": "Taşıma_Seçeneği_1_1.gif", "category": "Mor Neon"}, {"name": "Terminal", "filename": "Terminal_1_1.gif", "category": "Mor Neon"}, {"name": "Ters Sırala", "filename": "Ters_Sırala_1_1.gif", "category": "Mor Neon"}, {"name": "Twitch", "filename": "Twitch_1_1.gif", "category": "Mor Neon"}, {"name": "Twitter", "filename": "Twitter_1_1.gif", "category": "Mor Neon"}, {"name": "U", "filename": "U_1_1.gif", "category": "Mor Neon"}, {"name": "Uzun Sağ Ok", "filename": "Uzun_Sağ_Ok_1_1.gif", "category": "Mor Neon"}, {"name": "Uzun Sol Ok", "filename": "Uzun_Sol_Ok_1_1.gif", "category": "Mor Neon"}, {"name": "Uzun Yukarı Ok", "filename": "Uzun_Yukarı_Ok_1_1.gif", "category": "Mor Neon"}, {"name": "V", "filename": "V_1_1.gif", "category": "Mor Neon"}, {"name": "Video Oynat Butonu", "filename": "Video_Oynat_Butonu_1_1.gif", "category": "Mor Neon"}, {"name": "W", "filename": "W_1_1.gif", "category": "Mor Neon"}, {"name": "X", "filename": "X_1_1.gif", "category": "Mor Neon"}, {"name": "Y", "filename": "Y_1_1.gif", "category": "Mor Neon"}, {"name": "Yanıtla", "filename": "Yanıtla_1_1.gif", "category": "Mor Neon"}, {"name": "Yanıtla", "filename": "Yanıtla_2_1_1.gif", "category": "Mor Neon"}, {"name": "Yapıştır", "filename": "Yapıştır_1_1.gif", "category": "Mor Neon"}, {"name": "Yasak Sembolü", "filename": "Yasak_Sembolü_1_1.gif", "category": "Mor Neon"}, {"name": "Yatay Boyutlandır", "filename": "Yatay_Boyutlandır_1_1.gif", "category": "Mor Neon"}, {"name": "Yazdırma Aracı", "filename": "Yazdırma_Aracı_1_1.gif", "category": "Mor Neon"}, {"name": "Yazı Tipi Sembolü", "filename": "Yazı_Tipi_Sembolü_1_1.gif", "category": "Mor Neon"}, {"name": "Yenile", "filename": "Yenile_1_1.gif", "category": "Mor Neon"}, {"name": "Yenileme Oku", "filename": "Yenileme_Oku_1_1.gif", "category": "Mor Neon"}, {"name": "Yorum Dolu", "filename": "Yorum_Dolu_1_1.gif", "category": "Mor Neon"}, {"name": "YouTube", "filename": "YouTube_1_1.gif", "category": "Mor Neon"}, {"name": "Yukarı El İşareti", "filename": "Yukarı_El_İşareti_1_1.gif", "category": "Mor Neon"}, {"name": "Yukarı Ok", "filename": "Yukarı_Ok_1_1.gif", "category": "Mor Neon"}, {"name": "Yukarı Ok Daire", "filename": "Yukarı_Ok_Daire_1_1.gif", "category": "Mor Neon"}, {"name": "Yukarı Ok Düz", "filename": "Yukarı_Ok_Düz_1_1.gif", "category": "Mor Neon"}, {"name": "Yukarı Sırala", "filename": "Yukarı_Sırala_1_1.gif", "category": "Mor Neon"}, {"name": "Yukarı Üçgen", "filename": "Yukarı_Üçgen_1_1.gif", "category": "Mor Neon"}, {"name": "Yukarı Şevron", "filename": "Yukarı_Şevron_1_1.gif", "category": "Mor Neon"}, {"name": "Yukarı Şevron", "filename": "Yukarı_Şevron_2_1_1.gif", "category": "Mor Neon"}, {"name": "Yukarı Şevron Oku", "filename": "Yukarı_Şevron_Oku_1_1.gif", "category": "Mor Neon"}, {"name": "Yıldız İşareti", "filename": "Yıldız_İşareti_1_1.gif", "category": "Mor Neon"}, {"name": "Z", "filename": "Z_1_1.gif", "category": "Mor Neon"}, {"name": "Çarpı İşareti", "filename": "Çarpı_İşareti_1_1.gif", "category": "Mor Neon"}, {"name": "Çift Açı Sağ", "filename": "Çift_Açı_Sağ_1_1.gif", "category": "Mor Neon"}, {"name": "Çift Açı Sol", "filename": "Çift_Açı_Sol_1_1.gif", "category": "Mor Neon"}, {"name": "Çift Ok", "filename": "Çift_Ok_1_1.gif", "category": "Mor Neon"}, {"name": "Çift Sol Ok", "filename": "Çift_Sol_Ok_1_1.gif", "category": "Mor Neon"}, {"name": "Çöp Kutusu", "filename": "Çöp_Kutusu_1_1.gif", "category": "Mor Neon"}, {"name": "Çıkış Yap", "filename": "Çıkış_Yap_1_1.gif", "category": "Mor Neon"}, {"name": "Önceki Adım", "filename": "Önceki_Adım_1_1.gif", "category": "Mor Neon"}, {"name": "Özelliğe Göre Sırala", "filename": "Özelliğe_Göre_Sırala_1_1.gif", "category": "Mor Neon"}, {"name": "Özelliğe Göre Sırala", "filename": "Özelliğe_Göre_Sırala_2_1_1.gif", "category": "Mor Neon"}, {"name": "Özçekim", "filename": "Özçekim_1_1.gif", "category": "Mor Neon"}, {"name": "Ünlem", "filename": "Ünlem_1_1.gif", "category": "Mor Neon"}, {"name": "Üzgün Yüz", "filename": "Üzgün_Yüz_1_1.gif", "category": "Mor Neon"}, {"name": "Üç", "filename": "Üç_1_1.gif", "category": "Mor Neon"}, {"name": "İleri Butonu", "filename": "İleri_Butonu_1_1.gif", "category": "Mor Neon"}, {"name": "İmleç", "filename": "İmleç_1_1.gif", "category": "Mor Neon"}, {"name": "İnce Ok Uçları", "filename": "İnce_Ok_Uçları_1_1.gif", "category": "Mor Neon"}, {"name": "İndir Sembolü", "filename": "İndir_Sembolü_1_1.gif", "category": "Mor Neon"}, {"name": "İzleyici", "filename": "İzleyici_1_1.gif", "category": "Mor Neon"}, {"name": "İşaretleyici", "filename": "İşaretleyici_1_1.gif", "category": "Mor Neon"}, {"name": "Şemsiye", "filename": "Şemsiye_1_1.gif", "category": "Mor Neon"}, {"name": "Şimşek", "filename": "Şimşek_1_1.gif", "category": "Mor Neon"}];
+    let activeSlotIndex = 0;
+
+    function resolveImg(imgEl, filename) {
+      imgEl.onerror = function() {
+        if (!this.dataset.tried) {
+          this.dataset.tried = "1";
+          this.src = "icons/" + filename;
+        }
+      };
+      imgEl.src = "icons/" + filename;
+    }
+
+    function showToast(text) {
+      const toast = document.getElementById('hintToast');
+      toast.textContent = text;
+      toast.style.display = 'block';
+      clearTimeout(window.toastTimer);
+      window.toastTimer = setTimeout(() => { toast.style.display = 'none'; }, 2200);
+    }
+
+    const deckGrid = document.getElementById('deckGrid');
+    function initDeck(keys) {
+      deckGrid.innerHTML = '';
+      keys.forEach((k, idx) => {
+        const div = document.createElement('div');
+        div.className = 'deck-key' + (idx === activeSlotIndex ? ' active-slot' : '');
+        div.dataset.slot = idx;
+        
+        const slotNum = document.createElement('span');
+        slotNum.className = 'slot-num';
+        slotNum.textContent = (idx + 1);
+        div.appendChild(slotNum);
+        
+        const img = document.createElement('img');
+        resolveImg(img, k);
+        div.appendChild(img);
+        
+        div.onclick = () => {
+          document.querySelectorAll('.deck-key').forEach(k => k.classList.remove('active-slot'));
+          div.classList.add('active-slot');
+          activeSlotIndex = idx;
+          showToast(`Tuş #${idx + 1} seçildi.`);
+        };
+        deckGrid.appendChild(div);
+      });
+    }
+    initDeck(INITIAL_KEYS);
+
+    const galleryGrid = document.getElementById('galleryGrid');
+    function renderGallery(items) {
+      galleryGrid.innerHTML = '';
+      document.getElementById('galleryCount').textContent = `${items.length} İkon Gösteriliyor`;
+      items.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'icon-card';
+        card.title = `${item.name} — Tıkla ve Stream Deck'e yerleştir`;
+        
+        const imgWrap = document.createElement('div');
+        imgWrap.className = 'img-wrap';
+        const img = document.createElement('img');
+        img.loading = "lazy";
+        resolveImg(img, item.filename);
+        imgWrap.appendChild(img);
+
+        const nameDiv = document.createElement('div');
+        nameDiv.className = 'icon-name';
+        nameDiv.textContent = item.name;
+
+        const catDiv = document.createElement('div');
+        catDiv.className = 'icon-cat';
+        catDiv.textContent = item.category;
+
+        card.appendChild(imgWrap);
+        card.appendChild(nameDiv);
+        card.appendChild(catDiv);
+
+        card.onclick = () => {
+          const allKeys = deckGrid.querySelectorAll('.deck-key');
+          const targetKey = allKeys[activeSlotIndex] || allKeys[0];
+          if (targetKey) {
+            const keyImg = targetKey.querySelector('img');
+            resolveImg(keyImg, item.filename);
+            showToast(`[Tuş #${activeSlotIndex + 1}] "${item.name}" yerleştirildi!`);
+            allKeys.forEach(k => k.classList.remove('active-slot'));
+            activeSlotIndex = (activeSlotIndex + 1) % 15;
+            allKeys[activeSlotIndex].classList.add('active-slot');
+          }
+        };
+        galleryGrid.appendChild(card);
+      });
+    }
+    renderGallery(ASSETS);
+
+    document.getElementById('searchInput').oninput = (e) => {
+      const q = e.target.value.toLowerCase().trim();
+      const filtered = ASSETS.filter(a => a.name.toLowerCase().includes(q) || a.filename.toLowerCase().includes(q));
+      renderGallery(filtered);
+    };
+
+    document.getElementById('btnReset').onclick = () => {
+      activeSlotIndex = 0;
+      initDeck(INITIAL_KEYS);
+      showToast("Varsayılana sıfırlandı.");
+    };
+
+    document.getElementById('btnRandom').onclick = () => {
+      const shuffled = [...ASSETS].sort(() => 0.5 - Math.random());
+      const r15 = shuffled.slice(0, 15).map(a => a.filename);
+      activeSlotIndex = 0;
+      initDeck(r15);
+      showToast("🎲 Rastgele dolduruldu!");
+    };
+  </script>
+</body>
+</html>
