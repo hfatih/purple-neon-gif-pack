@@ -18,7 +18,7 @@
     <img src="https://img.shields.io/badge/Platforms-Stream%20Deck%20%7C%20evoX-0078D6?style=flat-square" alt="Platforms">
     <img src="https://img.shields.io/badge/Archive-39.95%20MB%20(%3C50MB%20Policy)-10B981?style=flat-square" alt="39.95 MB">
     <img src="https://img.shields.io/badge/Validation-100%25%20evoX%20Zod-22c55e?style=flat-square" alt="evoX Validated">
-    <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License MIT">
+    <img src="https://img.shields.io/badge/License-GPL--3.0-blue?style=flat-square" alt="GPL-3.0-only">
   </p>
   <p align="center">
     <img src="https://hits.sh/github.com/hfatih/purple-neon-gif-pack.svg?style=flat-square&label=views&color=a855f7" alt="Views">
@@ -56,4 +56,6 @@ Carefully balanced with frame-level optimization (14 keyframes per loop, 39.95 M
 ---
 
 ## 📄 License
-Released under the [MIT License](LICENSE).
+Released under the [GNU GPL v3.0](LICENSE).
+
+Project-owned code and original material in this revision are licensed under [GNU GPL v3.0](LICENSE) (GPL-3.0-only). Third-party code, fonts, imagery, data, and brand assets retain their own terms and attributions. [Previous license and copyright notice](licenses/previous-license.txt).
